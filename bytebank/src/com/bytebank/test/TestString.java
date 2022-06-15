@@ -18,8 +18,28 @@ public class TestString {
 		char letra = nombre.charAt(3);
 		int indice = nombre.indexOf("e");
 		
-		System.out.println("Después de método: "+nombre);
-		System.out.println("Caracter encontrado: "+letra);
-		System.out.println("Indice encontrado: "+indice);		
+		Object cuenta = new CuentaAhorro(344, 544);
+		
+		printLine(nombre);
+		printLine(letra);
+		printLine(indice);
+		printLine(new CuentaAhorro(200,  300));		
 	}
+	
+	public static void printLine(Object valor) {
+		System.out.println(valor.toString());
+	}
+	
+	/*
+	public static void printLine(String valor) {
+		System.out.println(valor);
+	}
+	public static void printLine(char valor) {
+		System.out.println(valor);
+	}
+	public static void printLine(CuentaAhorros valor) {
+		System.out.println(valor);
+	}
+	*/
+	
 }
